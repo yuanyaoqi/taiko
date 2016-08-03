@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/taiko.css">
+</head>
+<body>
+<div id="startBox">
+    <img src="img/title.png" alt="">
+    <div>
+        <input type="text" placeholder="请输入昵称" id="username">
+        <h4></h4>
+        <div onclick="gameStart()">开始游戏</div>
+    </div>
+</div>
+<div id="ruleBox">
+    <img src="img/rules.png" alt="">
+    <button onclick="gamePlay()">我知道啦~</button>
+</div>
+<div id="taikoBox">
+    <div id="head"></div>
+    <div id="middle">
+        <div id="theIcon">
+            <h1 id="scoreBoard">0</h1>
+            <img src="img/hardicon.png" alt="" id="hardIcon">
+            <img src="img/taiko.png" alt="" id="taikoIcon">
+            <img src="img/taikoredleft.png" alt="" class="taikoRed">
+            <img src="img/taikoblueleft.png" alt="" class="taikoBlue">
+            <img src="img/taikoredright.png" alt="" class="taikoRed">
+            <img src="img/taikoblueright.png" alt="" class="taikoBlue">
+        </div>
+        <div id="theRoad">
+            <img src="img/taikoshadow.png" alt="">
+            <img src="img/taikosmile.png" alt="" id="taikoSmile">
+            <canvas id="roadCtx" width="645" height="120"></canvas>
+            <canvas id="judgementCtx" width="650" height="250"></canvas>
+        </div>
+    </div>
+    <div id="foot">
+        <div id="pauseChoice">
+        <button onclick="gamePlay()" id="restartButton">重新开始</button><br>
+        <button onclick="gameContinue()" id="continueButton">继续游戏</button>
+        </div>
+        <button onclick="gamePause()" id="pausebutton">暂停</button>
+        <canvas id="dancerCtx" width="900" height="260"></canvas>
+    </div>
+</div>
+<div id="endBox">
+    <h1>排行榜</h1>
+    <table id="scoreRank">
+    <tr><td><div id="firstIcon"></div></td><td>暂无</td><td>暂无</td></tr>
+    <tr><td><div id="secondIcon"></div></td><td>暂无</td><td>暂无</td></tr>
+    <tr><td><div id="thirdIcon"></div></td><td>暂无</td><td>暂无</td></tr>
+    </table>
+    <div onclick="gamePlay()">再玩一局</div>
+
+</div>
+<div id="theSource">
+    <img src="img/taikocomb.png" alt="" id="taikoComb">
+    <img src="img/judgementText.png" alt="" id="judgementText">
+    <img src="img/judgementHalo.png" alt="" id="judgementHalo">
+    <img src="img/dancer_taiko.png" alt="" id="dancerTaiko">
+    <img src="img/dancer_1.png" alt="" id="dancer_1">
+    <img src="img/dancergirl.png" alt="" id="dancergirl">
+    <audio src="audio/bg_travel.mp3" id="bg_travel"></audio>
+    <audio src="audio/bgmusic.m4a" id="bgmusic" loop="loop"></audio>
+    <audio src="audio/gamestart.m4a" id="gamestart"></audio>
+    <audio src="audio/title_call.m4a" id="title_call"></audio>
+    <audio src="audio/dong.wav" id="dongmusic"></audio>
+    <audio src="audio/ka.wav" id="kamusic"></audio>
+    <audio src="audio/endmusic.m4a" id="endmusic"></audio>
+</div>
+<script src="js/taiko.js"></script>
+</body>
+</html>

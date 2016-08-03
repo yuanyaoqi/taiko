@@ -1,0 +1,317 @@
+
+body{
+    background-image: url(../img/bodybg.png);
+    background-position: 100px 50px;
+    font-family: theTaiko;
+}
+/*开始界面*/
+#startBox{
+    margin: 50px 200px;
+    width: 900px;
+    height: 510px;
+    position: absolute;
+    border: 20px solid darkgrey;
+    display:block;
+    background-image: url(../img/startbg.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+}
+#startBox img{
+    width: 600px;
+    position: absolute;
+    left: 140px;
+    top: -70px;
+}
+#startBox>div{
+    width: 600px;
+    height: 250px;
+    background-color: rgba(50,50,50,.6);
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+#startBox h4{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: white;
+}
+#username{
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+#startBox>div>div{
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 900;
+    background-color: white;
+    color: darkgrey;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+#startBox>div>div:hover{
+    background-color: #f64826;
+    color: white;
+    cursor: pointer;
+}
+/*规则框*/
+#ruleBox{
+    margin: 50px 200px;
+    width: 900px;
+    height: 510px;
+    position: absolute;
+    border: 20px solid darkgrey;
+    display:none;
+}
+#ruleBox img{
+    width: 700px;
+    margin: 20px 100px;
+}
+#ruleBox>button{
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 900;
+    background-color:#f64826;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 350px;
+    top: 370px;
+}
+#ruleBox>button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+/*游戏框*/
+#taikoBox{
+    margin: 50px 200px;
+    width: 900px;
+    height: 510px;
+    position: absolute;
+    border: 20px solid darkgrey;
+    display:none;
+}
+/*头部*/
+#head{
+    height: 120px;
+    background-image: url(../img/headbg1.png);
+}
+/*中部*/
+#middle{
+    height: 120px;
+    position: relative;
+    border-top:5px solid black;
+    border-bottom:5px solid black;
+}
+#theIcon{
+    width:250px;
+    height: 120px;
+    border-right:5px solid black;
+    background-color: orangered;
+    float: left;
+}
+#scoreBoard{
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom-right-radius: 14px;
+    font-family: theTaiko;
+    display: inline-block;
+    margin: 0px;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+#hardIcon{
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+#taikoIcon{
+    width: 130px;
+    top: -15px;
+    left: 120px;
+    position: absolute;
+}
+.taikoRed{
+    position: absolute;
+    width: 135px;
+    height: 152px;
+    left: 118px;
+    top: -33px;
+    display: none;
+}
+.taikoBlue{
+    position: absolute;
+    width: 142px;
+    height: 158px;
+    left: 115px;
+    top: -37px;
+    display: none;
+
+}
+#judgementCtx{
+    position: absolute;
+    left: 0px;
+    top: -120px;
+    left: 250px;
+}
+#theRoad{
+    width: 645px;
+    height: 85px;
+    border-bottom: 5px solid black;
+    background-color: #3b3b3b;
+    float: left;
+}
+#theRoad img{
+    width: 95px;
+    top: -4px;
+    position: absolute;
+}
+#taikoSmile{
+    display: none;
+}
+#roadCtx{
+    position: absolute;
+    left: 255px;
+}
+/*底部*/
+#foot{
+    height: 260px;
+    background-image: url(../img/footbg.jpg);
+    background-size: cover;
+    background-position:0px 420px;
+}
+#dancerCtx{
+    position: absolute;
+}
+/*暂停*/
+#pausebutton{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    left: 10px;
+    top: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    z-index: 12;
+}
+#pauseChoice{
+    width: 700px;
+    height: 310px;
+    padding: 100px;
+    background-color: rgba(50,50,50,.7);
+    position: absolute;
+    z-index: 20;
+    top: 0px;
+    display: none;
+}
+#restartButton,#continueButton{
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 170px;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+}
+#restartButton:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+#continueButton:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+/*游戏结束界面*/
+#endBox{
+    margin: 50px 200px;
+    width: 360px;
+    height: 310px;
+    padding: 100px 250px 100px 250px;
+    position: absolute;
+    border: 20px solid darkgrey;
+    display:none;
+    background-image: url(../img/endbg.png);
+    text-align: center;
+}
+#firstIcon{
+    width: 30px;
+    height: 22px;
+    background-image: url(../img/clearmark.png);
+    background-position: -107px;
+    display: inline-block;
+}
+#secondIcon{
+    width: 28px;
+    height: 22px;
+    background-image: url(../img/clearmark.png);
+    background-position: -80px;
+    display: inline-block;
+
+}
+#thirdIcon{
+    width: 30px;
+    height: 22px;
+    background-image: url(../img/clearmark.png);
+    background-position: -51px;
+    display: inline-block;
+
+}
+#endBox table{
+    font-size: 20px;
+}
+#endBox td{
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+}
+#endBox>div{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 900;
+    background-color: dimgray;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 390px;
+    top: 350px;
+    z-index: 20;
+}
+#endBox>div:hover{
+    cursor: pointer;
+    background-color: #f64826;
+}
+/*图片资源*/
+#theSource img{
+    display: none;
+}
