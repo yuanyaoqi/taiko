@@ -1,7 +1,7 @@
 ## taiko
 * 使用HTML5与原生JavaScript实现太鼓达人网页版游戏
 * 所用技术：HTML&css,HTML5 canvas,javascript
-* [游戏演示地址](https://yuanyaoqi.github.io/taiko/)
+* [游戏演示地址](https://yuanyaoqi.github.io/taiko/) 由于音频文件过大，网页加载慢，在音乐响起前开始游戏将出现bug……
 
 ##游戏逻辑实现
 根据每首歌的曲谱创建太鼓鼓点，每一个节拍有1、2、3、4、0五个值，代表四种不同鼓点或无鼓点
